@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom'
 function Home() {
   return (
   <>
-  <h3 className='heading'>Mini Web for devs</h3>
+  <h3 className='heading'>Mini Web for Tech's</h3>
       <div className='grid-cont'>
         {users.map((data)=>{
             return(
