@@ -96,9 +96,18 @@
     }
     
 }
+
 .heading{
     text-align: center;
     color: red;
     text-decoration: underline black;
 
+}
+@media (max-width: 400px) {   
+.grid-cont{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+   
+
+}
 }

@@ -1,6 +1,7 @@
 import React from 'react'
 import { useParams } from 'react-router-dom'
 import { users } from './userdata';
+import { Link } from 'react-router-dom';
 
 
 function Userinfo() {
@@ -11,7 +12,9 @@ function Userinfo() {
     }
   
   return (
-    <div style={{textAlign: 'center', padding: '20px'}}>
+    <>
+        <Link className='link' to='/'><img src="/arrow.png" alt="" /></Link>
+       <div style={{textAlign: 'center', padding: '20px'}}>
         <img src={user.profilePic} alt="" className='img' />
         <div className='userinfo'>
         <h2 className='name'>{user.name}</h2>
@@ -23,6 +26,8 @@ function Userinfo() {
         </div>
 
     </div>
+    </>
+ 
   )
 }
 
